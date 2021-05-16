@@ -1,0 +1,9 @@
+  Purpose:
+    Type: String
+    Default: testing
+    AllowedValues:
+      - testing
+      - production
+    Description: The purpose of this instance.
+  StackName:
+    Value: !Ref AWS::udagram-network
