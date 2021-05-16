@@ -6,6 +6,7 @@ Parameters:
     EnvironmentName:
         Description: An environment name that will be prefixed to resource names
         Type: String
+        Default: "udagram-servers"
 Resources:
   LBSecGroup:
     Type: AWS::EC2::SecurityGroup
