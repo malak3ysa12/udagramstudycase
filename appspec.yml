@@ -1,0 +1,19 @@
+version: 0.0  
+os: linux
+files:
+    - source: ./
+      destination: /var/www/release/
+permissions:
+    - object: /var/www/html/
+      owner: apache
+      group: apache
+hooks:
+  BeforeInstall:
+    - location: scripts/beforeInstall.bash
+      timeout: 300
+      runas: root
+
+  AfterInstall:
+    - location: scripts/afterInstall.bash
+      timeout: 3600
+      runas: root
