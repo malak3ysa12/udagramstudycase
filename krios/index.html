@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Template is: Projection by TEMPLATED
+	Author of Modifications: Will Petryniak
+
+	Krios Software Development Landing Page
+-->
+<html>
+	<head>
+		<title>Krios Software Development</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />		
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><img src="images/Logo.png" alt="Logo.png" />
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="about.html">About</a>
+						<a href="contact.html">Contact</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Redefine your Workflow</h1>
+					</header>
+
+					<div class="flex ">
+
+						<div>
+							<span class="icon fa-car"></span>
+							<h3>Enhance</h3>
+							<p>Software for small Business</p>
+						</div>
+
+						<div>
+							<span class="icon fa-camera"></span>
+							<h3>Design</h3>
+							<p>Created to your Exact Specification</p>
+						</div>
+
+						<div>
+							<span class="icon fa-bug"></span>
+							<h3>Grow</h3>
+							<p>Changes with your Business</p>
+						</div>
+
+					</div>
+
+					<footer>
+						<a href="about.html" class="button">Get Started</a>
+					</footer>
+				</div>
+			</section>
+
+
+		<!-- Three -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							<div class="image round">
+								<img src="images/laptopCode.jpg" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Create Software<br /> how you need it</h3>
+							</header>
+							<p>At Krios, we take the requirements built by you <br />to design a software that fits your company<br />perfectly.</p>
+							<footer>
+								<a href="about.html" class="button">Learn More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image round">
+								<img src="images/watchPic.jpg" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Designed<br /> on time</h3>
+							</header>
+							<p>Krios guarentees to deliver<br />within the timeframe<br /> you help create.</p>
+							<footer>
+								<a href="contact.html" class="button">Contact Us</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>Get in touch</h3>
+					<p>Email <strong>support@krios.ca</strong> OR fill out the form below.</p>
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit" onclick="sendMessage(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('message').value);"></li>
+						</ul>
+					</form>
+
+					<div class="copyright">
+						Krios Software Development. &copy; Design:<a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sendMessage(name, email, message)				
+				{
+					if((email == null || email =='') && (name == null || name =='') &&(message == null || message ==''))
+					{
+						window.alert('Please fill out all of the boxes below.');
+					}
+					else if((name == null || name ==''))
+					{
+						window.alert('Please enter a Name.');
+					}
+					else if((email == null || email ==''))
+					{
+						window.alert('Please enter an Email Address.');
+					}
+					else if((message == null || message ==''))
+					{
+						window.alert('Please enter a message with some info about you.');
+					}
+
+					window.location.href = 'confirmation.html';
+				}			
+
+			</script>
+	</body>
+</html>
