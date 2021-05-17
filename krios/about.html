@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Krios Software Development - About</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>Krios</strong> Software Development</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="about.html">About</a>
+						<a href="contact.html">Contact</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>About Krios</h2>
+						<p>Small Business Software at Small Business Prices</p>
+					</header>
+					<div class="image round left">
+						<img src="images/handLaptop.jpg" alt="Pic 01" />
+					</div>
+					<p>Krios was created with the vision of offering small business the chance to design and create their own software at prices they can afford. We have realized that the stigma for overpriced software has taken over the working world, and we aim to change that. With software that can organize and manage your data, you can explore the true potential of your small Businsess. And we will be right there with you.</p>
+
+					<div class="image round right">
+						<img src="images/couchLaptop.jpg" alt="Pic 02" />
+					</div>
+					<p>When you work with Krios software development, we will work as your IT department. You can rely on us to create you an effective and durrable application, which your company can use to increase productivity and make your business process more effective. "Gone are the days of paper based business" is a term we already know, "Gone are the days of chunky overpriced software" is a term you will learn with Krios. </p>
+					
+					<h4>How We work:</h4>
+
+					<ol>
+						<li>You and a member of the Krios Account managment team will meet, and define the requirements for your software application. </li>
+						<li>Krios will provide you with a flexible quote based on the complexity of the software you will need. </li>
+						<li>After confirmation, Krios will design you your software within the timeline agreed upon, and launch your new Business Application for you and your Employees to use.</li>
+					</ol>
+
+					<p>Its honestly just as simple as that. Its time to take the next step with your small Business. </p>
+					
+					<p>Scroll down to get in touch. </p>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h3>Get in touch</h3>
+					<p>Email <strong>support@krios.ca</strong> OR fill out the form below.</p>
+					<form action="#" method="post">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit" onclick="sendMessage(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('message').value);"></li>
+						</ul>
+					</form>
+
+					<div class="copyright">
+						Krios Software Development. &copy; Design:<a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function sendMessage(name, email, message)				
+				{
+					if((email == null || email =='') && (name == null || name =='') &&(message == null || message ==''))
+					{
+						window.alert('Please fill out all of the boxes below.');
+					}
+					else if((name == null || name ==''))
+					{
+						window.alert('Please enter a Name.');
+					}
+					else if((email == null || email ==''))
+					{
+						window.alert('Please enter an Email Address.');
+					}
+					else if((message == null || message ==''))
+					{
+						window.alert('Please enter a message with some info about you.');
+					}
+
+					window.location.href = 'confirmation.html';
+				}			
+
+			</script>
+	</body>
+</html>
