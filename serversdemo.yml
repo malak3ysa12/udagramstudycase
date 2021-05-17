@@ -88,13 +88,13 @@ Resources:
           apt-get install apache2 -y
           systemctl start apache2.service
           sudo apt-get update -y
-         sudo apt install ruby-full -y
-         sudo apt install wget -y
-         cd /home/ubuntu
-         wget https://aws-codedeploy-us-west-2.s3.us-west-2.amazonaws.com/latest/install
-         chmod +x ./install
-         sudo ./install auto
-         sudo service codedeploy-agent restart
+          sudo apt install ruby-full -y
+          sudo apt install wget -y
+          cd /home/ubuntu
+          wget https://aws-codedeploy-us-west-2.s3.us-west-2.amazonaws.com/latest/install
+          chmod +x ./install
+          sudo ./install auto
+          sudo service codedeploy-agent restart
       ImageId: ami-090717c950a5c34d3
       KeyName: that-one
       IamInstanceProfile: !Ref UdagramEC2InstanceProfile
