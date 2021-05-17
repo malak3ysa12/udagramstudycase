@@ -85,7 +85,7 @@ Resources:
           apt-get install apache2 -y
           systemctl start apache2.service
           cd /var/www/html
-          aws s3 cp s3://udacity-demo-1/udacity.zip .
+          aws s3 cp s3://yours3bucket/test.zip .
           unzip -o udacity.zip 
           systemctl restart apache2.service         
       ImageId: ami-090717c950a5c34d3
